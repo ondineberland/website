@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
@@ -10,7 +9,7 @@
         content="Academic portfolio of Dr. Ondine Berland, Postdoctoral Fellow in Environmental Economics at LSE.">
     <meta property="og:url" content="https:ondineberland.com">
     <meta property="og:image" content="https://www.ondineberland.com/portrait.jpg">
-    
+
     <!-- Image details (recommended) -->
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -61,6 +60,14 @@
         /* Custom Utilities */
         .text-balance {
             text-wrap: balance;
+        }
+
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
         }
 
         /* Smooth reveal classes */
@@ -151,29 +158,29 @@
                 class="w-full max-w-xs text-center font-display text-2xl text-forest hover:text-gold transition-colors mobile-link">Research</a>
             <a href="#teaching"
                 class="w-full max-w-xs text-center font-display text-2xl text-forest hover:text-gold transition-colors mobile-link">Teaching</a>
-            <a href="#cv" class="w-full max-w-xs text-center font-display text-2xl text-forest hover:text-gold transition-colors mobile-link">CV</a>
+            <a href="#cv"
+                class="w-full max-w-xs text-center font-display text-2xl text-forest hover:text-gold transition-colors mobile-link">CV</a>
             <a href="#contact"
                 class="w-full max-w-xs text-center font-display text-2xl text-forest hover:text-gold transition-colors mobile-link">Contact</a>
         </div>
     </nav>
 
-    <!-- Main Content Placeholder -->
+    <!-- Main Content -->
     <main>
         <!-- Hero Section -->
         <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-
             <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
                 <!-- Professional Portrait -->
                 <div class="relative hidden md:block reveal delay-200">
                     <div
                         class="aspect-square rounded-full bg-gradient-to-br from-warm-bg-alt to-border-warm opacity-30 absolute inset-0 blur-3xl">
                     </div>
-                    <!-- Portrait Image -->
                     <div class="relative w-full max-w-xs mx-auto">
                         <img src="portrait.jpg" alt="Dr. Ondine Berland"
                             class="w-full h-auto rounded-2xl shadow-2xl border-4 border-white/50 object-cover">
                     </div>
                 </div>
+
                 <!-- Mobile portrait -->
                 <div class="relative md:hidden reveal delay-200 mb-6">
                     <div
@@ -184,25 +191,34 @@
                             class="w-full h-auto rounded-2xl shadow-2xl border-4 border-white/50 object-cover">
                     </div>
                 </div>
+
                 <div class="space-y-8 reveal">
                     <h1 class="font-display text-5xl md:text-7xl font-bold text-text-main leading-tight">
                         Ondine <br>
                         <span class="text-forest">Berland</span>
                     </h1>
+
                     <div class="space-y-6 pt-6">
                         <p class="font-body text-text-main text-lg leading-relaxed">
                             I am an applied microeconomist. I study why households eat what they eat, and the implications for carbon emissions and inequality.
                         </p>
                     </div>
+
                     <div class="space-y-2">
-                        <p class="font-sans font-medium text-forest uppercase tracking-wider text-sm">Postdoctoral
-                            Fellow in Environmental Economics</p>
-                         <p class="font-body text-lg text-text-main">London School of Economics | Grantham Research
-                            Institute</p>
+                        <p class="font-sans font-medium text-forest uppercase tracking-wider text-sm">
+                            Postdoctoral Fellow in Environmental Economics
+                        </p>
+                        <p class="font-body text-lg text-text-main">
+                            London School of Economics | Grantham Research Institute
+                        </p>
                     </div>
+
                     <div class="space-y-2 pt-4">
-                        <p class="font-sans font-medium text-forest uppercase tracking-wider text-sm">Fields: Public Economics, Environmental Economics and Food Studies</p>
+                        <p class="font-sans font-medium text-forest uppercase tracking-wider text-sm">
+                            Fields: Public Economics, Food Studies
+                        </p>
                     </div>
+
                     <div class="flex flex-wrap gap-4 pt-4">
                         <a href="#research"
                             class="px-8 py-3 bg-forest text-white font-sans font-medium rounded-full hover:bg-forest-light transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
@@ -216,7 +232,6 @@
 
                     <!-- Social Icons -->
                     <div class="flex gap-6 pt-4 text-text-muted">
-                        <!-- X / Twitter -->
                         <a href="https://twitter.com/OndineBerland" target="_blank" rel="noopener"
                             class="hover:text-forest transition-colors" aria-label="X (Twitter)">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -224,16 +239,14 @@
                                     d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                             </svg>
                         </a>
-                    
-                        <!-- Email -->
+
                         <a href="mailto:o.berland@lse.ac.uk" class="hover:text-forest transition-colors" aria-label="Email">
                             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                         </a>
-                    
-                        <!-- Bluesky -->
+
                         <a href="https://bsky.app/profile/ondineberland.bsky.social" target="_blank" rel="noopener"
                             class="hover:text-forest transition-colors" aria-label="Bluesky">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -241,8 +254,7 @@
                                     d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z" />
                             </svg>
                         </a>
-                    
-                        <!-- LinkedIn -->
+
                         <a href="https://www.linkedin.com/in/ondine-berland/" target="_blank" rel="noopener"
                             class="hover:text-forest transition-colors" aria-label="LinkedIn">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -250,7 +262,7 @@
                                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.852 3.37-1.852 3.601 0 4.266 2.37 4.266 5.455v6.288zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.815 20.452H3.86V9h2.955v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
                             </svg>
                         </a>
-                        <!-- Google Scholar -->
+
                         <a href="https://scholar.google.com/" target="_blank" rel="noopener"
                             class="hover:text-forest transition-colors" aria-label="Google Scholar" title="Google Scholar">
                             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -262,23 +274,23 @@
             </div>
         </section>
 
-      <!-- Upcoming Presentations Section -->
-<section id="upcoming" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-        <div class="mb-12 reveal">
-            <h2 class="font-display text-4xl text-forest mb-4">Latest</h2>
-            <div class="w-24 h-1 bg-gold rounded-full"></div>
-        </div>
-        <div class="grid gap-8 md:grid-cols-1 reveal">
-            <div class="bg-warm-bg-alt p-8 rounded-3xl shadow-lg border border-border-warm">
-                <h3 class="font-display text-xl text-text-main font-bold mb-3">Spring 2026</h3>
-                <p class="font-body text-text-main leading-relaxed">
-                    Presenting at Grantham Institute, Strasbourg Uni, Workshop on Environmental and Natural Resources Economics in ENS de Lyon.
-                </p>
+        <!-- Latest Section -->
+        <section id="upcoming" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="mb-12 reveal">
+                    <h2 class="font-display text-4xl text-forest mb-4">Latest</h2>
+                    <div class="w-24 h-1 bg-gold rounded-full"></div>
+                </div>
+                <div class="grid gap-8 md:grid-cols-1 reveal">
+                    <div class="bg-warm-bg-alt p-8 rounded-3xl shadow-lg border border-border-warm">
+                        <h3 class="font-display text-xl text-text-main font-bold mb-3">Spring 2026</h3>
+                        <p class="font-body text-text-main leading-relaxed">
+                            Presenting at Grantham Institute, Strasbourg Uni, Workshop on Environmental and Natural Resources Economics in ENS de Lyon.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- Research Highlights Section -->
         <section id="research" class="py-24 bg-warm-bg-alt">
@@ -293,262 +305,276 @@
                     class="bg-gradient-to-br from-gold/10 to-warm-bg rounded-2xl shadow-xl p-8 md:p-12 mb-16 border-2 border-gold reveal hover:shadow-2xl transition-shadow duration-300">
                     <div class="flex items-center gap-3 mb-6">
                         <span
-                            class="px-3 py-1 bg-gold text-white text-xs font-sans font-bold uppercase tracking-wider rounded-full">Job
-                            Market Paper</span>
+                            class="px-3 py-1 bg-gold text-white text-xs font-sans font-bold uppercase tracking-wider rounded-full">Job Market Paper</span>
                     </div>
 
                     <h3 class="font-display text-3xl md:text-4xl font-bold text-text-main mb-4">
                         Households' Food Carbon Footprints
                     </h3>
-                   
 
-                    <p class="font-body text-lg text-text-main leading-relaxed mb-6">
-                        Food consumption is a significant contributor to households' carbon footprints. However,
-                        consumer heterogeneity in food-related carbon footprints remains underexplored, primarily due to
-                        limited data linking real-world consumption choices to environmental impacts. I address this gap
-                        by matching detailed purchase data with environmental impact estimates at the transaction level
-                        for a representative sample of 7,540 French households between 2017 and 2019. Using this unique
-                        dataset, I provide a comprehensive overview of the distribution of food carbon footprints and
-                        employ a structural demand model to estimate how price and expenditure changes influence food
-                        basket composition and carbon emissions. The analysis reveals three key insights. 1) There is
-                        heterogeneity in the distribution of food carbon footprints, with 20% of households accounting
-                        for 40% of total food emissions. 2) Households with higher carbon footprints are more
-                        price-sensitive, particularly regarding high-emission products like red meat. 3) Simulations
-                        indicate that a 44.60€/tCO2 eq. food carbon tax would reduce food-related emissions (8.5%),
-                        especially among high-emission households. While modest carbon tax levels appear effective at
-                        reducing emissions, they may also lead to a trade-off between lowering emissions and preserving
-                        diet quality.
-                    </p>
+                    <details class="mb-6">
+                        <summary class="font-sans text-sm font-medium text-forest cursor-pointer inline-flex items-center gap-2">
+                            Abstract
+                        </summary>
+                        <p class="font-body text-lg text-text-main leading-relaxed mt-4">
+                            Food consumption is a significant contributor to households' carbon footprints. However,
+                            consumer heterogeneity in food-related carbon footprints remains underexplored, primarily due to
+                            limited data linking real-world consumption choices to environmental impacts. I address this gap
+                            by matching detailed purchase data with environmental impact estimates at the transaction level
+                            for a representative sample of 7,540 French households between 2017 and 2019. Using this unique
+                            dataset, I provide a comprehensive overview of the distribution of food carbon footprints and
+                            employ a structural demand model to estimate how price and expenditure changes influence food
+                            basket composition and carbon emissions. The analysis reveals three key insights. 1) There is
+                            heterogeneity in the distribution of food carbon footprints, with 20% of households accounting
+                            for 40% of total food emissions. 2) Households with higher carbon footprints are more
+                            price-sensitive, particularly regarding high-emission products like red meat. 3) Simulations
+                            indicate that a 44.60EUR/tCO2 eq. food carbon tax would reduce food-related emissions (8.5%),
+                            especially among high-emission households. While modest carbon tax levels appear effective at
+                            reducing emissions, they may also lead to a trade-off between lowering emissions and preserving
+                            diet quality.
+                        </p>
+                    </details>
                 </div>
 
-               <!-- Other Papers Grid -->
-<div class="space-y-8">
-    <!-- Working Papers Section Header -->
-    <div class="pt-4">
-        <h3 class="font-display text-2xl font-bold text-text-main mb-6 flex items-center gap-3">
-            <svg class="w-6 h-6 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 6v12m6-6H6" />
-            </svg>
-            Working Papers
-        </h3>
-    </div>
+                <!-- Other Papers Grid -->
+                <div class="space-y-8">
+                    <!-- Working Papers Section Header -->
+                    <div class="pt-4">
+                        <h3 class="font-display text-2xl font-bold text-text-main mb-6 flex items-center gap-3">
+                            <svg class="w-6 h-6 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v12m6-6H6" />
+                            </svg>
+                            Working Papers
+                        </h3>
+                    </div>
 
-    <!-- Working Papers Row (one per line) -->
-    <div class="flex flex-col gap-6 reveal">
-        
- <div class="mt-2 reveal">
-    <div class="group bg-white p-6 rounded-xl shadow-lg border border-border-warm hover:shadow-xl transition-shadow duration-300 flex flex-col">
-        <div class="flex items-start gap-2 mb-3">
-            <span class="px-2 py-0.5 bg-blue-100 text-blue-800 text-xs font-sans font-bold uppercase rounded-full whitespace-nowrap">
-                Working Paper
-            </span>
-        </div>
+                    <!-- Working Papers Row (one per line) -->
+                    <div class="flex flex-col gap-6 reveal">
+                        <!-- Paper 1 -->
+                        <div
+                            class="group bg-white p-6 rounded-xl shadow-lg border border-border-warm hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                            <div class="flex items-start gap-2 mb-3">
+                                <span
+                                    class="px-2 py-0.5 bg-blue-100 text-blue-800 text-xs font-sans font-bold uppercase rounded-full whitespace-nowrap">Working
+                                    Paper</span>
+                            </div>
+                            <h3 class="font-display text-xl font-semibold text-text-main mb-3">
+                                How Do Households Adjust Food Purchases to Fuel Price Shocks?
+                            </h3>
+                            <p class="font-sans text-text-muted text-sm mb-3">
+                                with <span class="text-text-main"><a href="https://sites.google.com/site/fabriceetile/"
+                                        target="_blank" class="hover:text-forest transition-colors">Fabrice
+                                        Etilé</a></span><br />
+                                <span class="text-xs">July 2022</span>
+                            </p>
+                            <details class="mb-4">
+                                <summary class="font-sans text-sm font-medium text-forest cursor-pointer inline-flex items-center gap-2">
+                                    Abstract
+                                </summary>
+                                <p class="font-body text-text-main text-sm leading-relaxed mt-3">
+                                    Shocks in energy prices impact households' disposable income and welfare, with
+                                    consequences for the acceptance of environmental policies. We examine how households
+                                    adjust food consumption to such shocks by estimating the effects of fuel prices on food
+                                    purchasing patterns in France. Using homescan data, we find an elasticity of total food
+                                    expenditure of approximately -0.3, mainly through reductions in the unit value of
+                                    products. We highlight that households adjust more on unit value for fresh fruits and
+                                    vegetables, and more on volumes for animal proteins and alcohol. They adjust their
+                                    purchase patterns by restricting the frequency of shopping trips, visiting hard discount
+                                    stores, substituting among, and buying in bulk. Low-income households do not adjust
+                                    significantly to fuel price shocks, likely because they have already largely exploited
+                                    these adjustment margins. Thus, they are directly affected by any abrupt increase in
+                                    fuel prices.
+                                </p>
+                            </details>
+                            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4173034" target="_blank"
+                                class="inline-flex items-center gap-2 text-forest hover:text-gold font-sans font-medium text-sm transition-all duration-300 hover:gap-3 group/link">
+                                <span>SSRN Working Paper</span>
+                                <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
 
-        <h3 class="font-display text-xl font-semibold text-text-main mb-3">
-            The Gender Gap in Carbon Footprints
-        </h3>
+                        <!-- Paper 2 -->
+                        <div
+                            class="group bg-white p-6 rounded-xl shadow-lg border border-border-warm hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                            <div class="flex items-start gap-2 mb-3">
+                                <span
+                                    class="px-2 py-0.5 bg-green-100 text-green-800 text-xs font-sans font-bold uppercase rounded-full whitespace-nowrap">Accepted for publication</span>
+                            </div>
+                            <h3 class="font-display text-xl font-semibold text-text-main mb-3">
+                                Unequal Progress and Barriers for Women in Economics
+                            </h3>
+                            <p class="font-sans text-text-muted text-sm mb-3">
+                                with <span class="text-text-main"><a href="https://www.oliverharman.me/" target="_blank"
+                                        class="hover:text-forest transition-colors">Oliver Harman</a>, <a
+                                        href="https://ninonmoreaukastler.com/" target="_blank"
+                                        class="hover:text-forest transition-colors">Ninon
+                                        Moreau-Kastler</a></span><br />
+                                <span class="text-xs">May 2025</span><br />
+                                <span class="text-xs font-semibold text-forest">Accepted for publication in Reviews of Economic Literature</span>
+                            </p>
+                            <details class="mb-4">
+                                <summary class="font-sans text-sm font-medium text-forest cursor-pointer inline-flex items-center gap-2">
+                                    Abstract
+                                </summary>
+                                <p class="font-body text-text-main text-sm leading-relaxed mt-3">
+                                    This paper reviews the literature on gender inequalities in the academic field of economics, highlighting both
+                                    the unequal progress women have experienced and the persistent barriers they continue to face. Our analysis of
+                                    recent literature and available data highlights that the reduction in women's absence in the field has been
+                                    heterogeneous. While women now constitute 26% of published economists, their presence sharply declines at higher
+                                    ranks, with only 5% representation among economists in the top percentile of research influence. Notably, recent
+                                    progress has paradoxically concentrated at this highest level, indicating shifting institutional norms and
+                                    evolving perceptions about women's contributions. We further explore how understanding women's behaviours and
+                                    career choices, gender biases in evaluation, and workplace environments contribute to women's underrepresentation
+                                    in the field. Our discussion extends to the labour market for economists, drawing parallels with broader labour
+                                    trends, and examining how gender-biased treatment and hiring processes impact women's advancement. Finally, we
+                                    turn to policy interventions, which are key in promoting gender balance, focusing on networks, mentorship, role
+                                    models, and representation.
+                                </p>
+                            </details>
+                            <div class="flex flex-wrap gap-4 items-center">
+                                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4879332" target="_blank"
+                                    class="inline-flex items-center gap-2 text-forest hover:text-gold font-sans font-medium text-sm transition-all duration-300 hover:gap-3 group/link">
+                                    <span>SSRN WP</span>
+                                    <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.theigc.org/publications/pipelines-or-pyramids-review-barriers-women-economics"
+                                    target="_blank"
+                                    class="inline-flex items-center gap-2 text-forest hover:text-gold font-sans font-medium text-sm transition-all duration-300 hover:gap-3 group/link">
+                                    <span>IGC WP</span>
+                                    <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.ft.com/content/e1d2a4d4-df3e-43ac-ba67-0aaf6b51dc45"
+                                    target="_blank"
+                                    class="inline-flex items-center gap-1.5 px-2 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300">
+                                    <span>Featured in Financial Times</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-        <p class="font-sans text-text-muted text-sm mb-3">
-            with <span class="text-text-main"><a href="https://marionleroutier.github.io/" target="_blank" class="hover:text-forest transition-colors">Marion Leroutier</a></span><br />
-            <span class="text-xs">May 2025</span>
-        </p>
+                    <!-- Gender paper below Working Papers -->
+                    <div class="mt-2 reveal">
+                        <div
+                            class="group bg-white p-6 rounded-xl shadow-lg border border-border-warm hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                            <div class="flex items-start gap-2 mb-3">
+                                <span
+                                    class="px-2 py-0.5 bg-blue-100 text-blue-800 text-xs font-sans font-bold uppercase rounded-full whitespace-nowrap">Working
+                                    Paper</span>
+                            </div>
+                            <h3 class="font-display text-xl font-semibold text-text-main mb-3">
+                                The Gender Gap in Carbon Footprints
+                            </h3>
+                            <p class="font-sans text-text-muted text-sm mb-3">
+                                with <span class="text-text-main"><a href="https://marionleroutier.github.io/" target="_blank"
+                                        class="hover:text-forest transition-colors">Marion Leroutier</a></span><br />
+                                <span class="text-xs">May 2025</span>
+                            </p>
+                            <details class="mb-4">
+                                <summary class="font-sans text-sm font-medium text-forest cursor-pointer inline-flex items-center gap-2">
+                                    Abstract
+                                </summary>
+                                <p class="font-body text-text-main text-sm leading-relaxed mt-3">
+                                    We document a large gender gap in carbon footprints from food and transport in France using detailed consumption
+                                    data. Across these two major sources of emissions, women emit <strong class="text-forest">26 percent less than men</strong>.
+                                    After accounting for observable characteristics and differences in the scale of consumption, which partly reflects
+                                    gender differences in dietary energy needs, an 8 percent gap remains. Red meat and car-high-emission goods
+                                    associated with masculine identity-drive most of the residual gap, suggesting that differences in carbon footprints
+                                    between men and women are partly driven by gender stereotypes.
+                                </p>
+                            </details>
+                            <div class="flex flex-wrap gap-4 items-center">
+                                <a href="https://ifs.org.uk/publications/gender-gap-carbon-footprints-determinants-and-implications"
+                                    target="_blank"
+                                    class="inline-flex items-center gap-2 text-forest hover:text-gold font-sans font-medium text-sm transition-all duration-300 hover:gap-3 group/link">
+                                    <span>IFS Working Paper</span>
+                                    <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.lse.ac.uk/granthaminstitute/wp-content/uploads/2025/05/working-paper-424-Berland_Leroutier.pdf"
+                                    target="_blank"
+                                    class="inline-flex items-center gap-2 text-forest hover:text-gold font-sans font-medium text-sm transition-all duration-300 hover:gap-3 group/link">
+                                    <span>Grantham WP</span>
+                                    <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </a>
+                            </div>
 
-        <details class="mb-4">
-            <summary class="font-sans text-sm font-medium text-forest cursor-pointer">Abstract</summary>
-            <p class="font-body text-text-main text-sm leading-relaxed mt-3">
-                We document a large gender gap in carbon footprints from food and transport in France using detailed consumption
-                data. Across these two major sources of emissions, women emit <strong class="text-forest">26 percent less than men</strong>.
-                After accounting for observable characteristics and differences in the scale of consumption, which partly reflects
-                gender differences in dietary energy needs, an 8 percent gap remains. Red meat and car-high-emission goods
-                associated with masculine identity-drive most of the residual gap, suggesting that differences in carbon footprints
-                between men and women are partly driven by gender stereotypes.
-            </p>
-        </details>
+                            <div class="border-t border-border-warm pt-6 mt-6">
+                                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                                    <span class="font-sans text-xs font-bold text-text-muted uppercase tracking-wider whitespace-nowrap shrink-0">
+                                        Featured In:
+                                    </span>
+                                    <div class="flex flex-wrap gap-2">
+                                        <a href="https://www.theguardian.com/environment/2025/may/14/car-use-and-meat-consumption-drive-emissions-gender-gap-research-suggests?CMP=share_btn_url"
+                                            target="_blank"
+                                            class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
+                                            The Guardian
+                                        </a>
+                                        <a href="https://www.spiegel.de/wissenschaft/mensch/ernaehrung-und-verkehr-maenner-emittieren-26-mehr-emissionen-als-frauen-a-a7358f7c-5470-42af-b5ea-8ba8337b5460"
+                                            target="_blank"
+                                            class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
+                                            Der Spiegel
+                                        </a>
+                                        <a href="https://www.franceinfo.fr/replay-jt/france-2/20-heures/jt-de-20h-du-jeudi-15-mai-2025_7209831.html"
+                                            target="_blank"
+                                            class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
+                                            France 2
+                                        </a>
+                                        <a href="https://www.lemonde.fr/planete/article/2025/05/17/plus-de-viande-rouge-et-de-grosses-voitures-pourquoi-les-hommes-emettent-plus-de-co2-que-les-femmes_6606499_3244.html"
+                                            target="_blank"
+                                            class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
+                                            Le Monde
+                                        </a>
+                                        <a href="https://www.liberation.fr/environnement/climat/empreinte-carbone-viande-rouge-et-voiture-creusent-lecart-entre-les-femmes-et-les-hommes-20250514_MOQY6FWAJBE3XMXXLROG6VAJ5A/"
+                                            target="_blank"
+                                            class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
+                                            Libération
+                                        </a>
+                                        <a href="https://www.radiofrance.fr/franceculture/podcasts/avec-sciences/empreinte-carbone-les-femmes-emettent-moins-de-co2-que-les-hommes-5422083"
+                                            target="_blank"
+                                            class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
+                                            France Culture
+                                        </a>
+                                        <a href="https://www.euronews.com/green/2025/05/14/red-meat-and-cars-mean-french-men-have-a-26-higher-carbon-footprint-than-women-study-says"
+                                            target="_blank"
+                                            class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
+                                            Euronews
+                                        </a>
+                                        <a href="https://www.tf1.fr/tf1/top-info/videos/top-info-15-05-25-ndeg1-97777974.html"
+                                            target="_blank"
+                                            class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
+                                            TF1
+                                        </a>
+                                        <a href="https://www.alternatives-economiques.fr/bagnole-steaks-co2-faut-blamer-hommes/00115165"
+                                            target="_blank"
+                                            class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
+                                            Alternatives Economiques
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="flex flex-wrap gap-4 items-center">
-            <a href="https://ifs.org.uk/publications/gender-gap-carbon-footprints-determinants-and-implications" target="_blank"
-                class="inline-flex items-center gap-2 text-forest hover:text-gold font-sans font-medium text-sm transition-all duration-300 hover:gap-3 group/link">
-                <span>IFS Working Paper</span>
-                <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-            </a>
-            <a href="https://www.lse.ac.uk/granthaminstitute/wp-content/uploads/2025/05/working-paper-424-Berland_Leroutier.pdf" target="_blank"
-                class="inline-flex items-center gap-2 text-forest hover:text-gold font-sans font-medium text-sm transition-all duration-300 hover:gap-3 group/link">
-                <span>Grantham WP</span>
-                <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-            </a>
-        </div>
-
-        <div class="border-t border-border-warm pt-6 mt-6">
-            <div class="flex flex-col md:flex-row md:items-center gap-4">
-                <span class="font-sans text-xs font-bold text-text-muted uppercase tracking-wider whitespace-nowrap shrink-0">
-                    Featured In:
-                </span>
-                <div class="flex flex-wrap gap-2">
-                    <a href="https://www.theguardian.com/environment/2025/may/14/car-use-and-meat-consumption-drive-emissions-gender-gap-research-suggests?CMP=share_btn_url"
-                        target="_blank"
-                        class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
-                        The Guardian
-                    </a>
-                    <a href="https://www.spiegel.de/wissenschaft/mensch/ernaehrung-und-verkehr-maenner-emittieren-26-mehr-emissionen-als-frauen-a-a7358f7c-5470-42af-b5ea-8ba8337b5460"
-                        target="_blank"
-                        class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
-                        Der Spiegel
-                    </a>
-                    <a href="https://www.franceinfo.fr/replay-jt/france-2/20-heures/jt-de-20h-du-jeudi-15-mai-2025_7209831.html"
-                        target="_blank"
-                        class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
-                        France 2
-                    </a>
-                    <a href="https://www.lemonde.fr/planete/article/2025/05/17/plus-de-viande-rouge-et-de-grosses-voitures-pourquoi-les-hommes-emettent-plus-de-co2-que-les-femmes_6606499_3244.html"
-                        target="_blank"
-                        class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
-                        Le Monde
-                    </a>
-                    <a href="https://www.liberation.fr/environnement/climat/empreinte-carbone-viande-rouge-et-voiture-creusent-lecart-entre-les-femmes-et-les-hommes-20250514_MOQY6FWAJBE3XMXXLROG6VAJ5A/"
-                        target="_blank"
-                        class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
-                        Libération
-                    </a>
-                    <a href="https://www.radiofrance.fr/franceculture/podcasts/avec-sciences/empreinte-carbone-les-femmes-emettent-moins-de-co2-que-les-hommes-5422083"
-                        target="_blank"
-                        class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
-                        France Culture
-                    </a>
-                    <a href="https://www.euronews.com/green/2025/05/14/red-meat-and-cars-mean-french-men-have-a-26-higher-carbon-footprint-than-women-study-says"
-                        target="_blank"
-                        class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
-                        Euronews
-                    </a>
-                    <a href="https://www.tf1.fr/tf1/top-info/videos/top-info-15-05-25-ndeg1-97777974.html"
-                        target="_blank"
-                        class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
-                        TF1
-                    </a>
-                    <a href="https://www.alternatives-economiques.fr/bagnole-steaks-co2-faut-blamer-hommes/00115165"
-                        target="_blank"
-                        class="px-2.5 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300 hover:-translate-y-0.5">
-                        Alternatives Economiques
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    
-        <div
-            class="group bg-white p-6 rounded-xl shadow-lg border border-border-warm hover:shadow-xl transition-shadow duration-300 flex flex-col">
-            <div class="flex items-start gap-2 mb-3">
-               
-            </div>
-            <h3 class="font-display text-xl font-semibold text-text-main mb-3">
-                How Do Households Adjust Food Purchases to Fuel Price Shocks?
-            </h3>
-            <p class="font-sans text-text-muted text-sm mb-3">
-                with <span class="text-text-main"><a href="https://sites.google.com/site/fabriceetile/"
-                        target="_blank" class="hover:text-forest transition-colors">Fabrice
-                        Etilé</a></span><br />
-                <span class="text-xs">July 2022</span>
-            </p>
-            <details class="mb-4">
-                <summary class="font-sans text-sm font-medium text-forest cursor-pointer">Abstract</summary>
-                <p class="font-body text-text-main text-sm leading-relaxed mt-3">
-                    Shocks in energy prices impact households' disposable income and welfare, with consequences for the acceptance of
-                    environmental policies. We examine how households adjust food consumption to such shocks by estimating the effects
-                    of fuel prices on food purchasing patterns in France. Using homescan data, we find an elasticity of total food
-                    expenditure of approximately -0.3, mainly through reductions in the unit value of products. We highlight that
-                    households adjust more on unit value for fresh fruits and vegetables, and more on volumes for animal proteins and
-                    alcohol. They adjust their purchase patterns by restricting the frequency of shopping trips, visiting hard discount
-                    stores, substituting among, and buying in bulk. Low-income households do not adjust significantly to fuel price
-                    shocks, likely because they have already largely exploited these adjustment margins. Thus, they are directly
-                    affected by any abrupt increase in fuel prices.
-                </p>
-            </details>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4173034" target="_blank"
-                class="inline-flex items-center gap-2 text-forest hover:text-gold font-sans font-medium text-sm transition-all duration-300 hover:gap-3 group/link">
-                <span>SSRN Working Paper</span>
-                <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-            </a>
-        </div>
-
-        <!-- Paper 2 -->
-        <div
-            class="group bg-white p-6 rounded-xl shadow-lg border border-border-warm hover:shadow-xl transition-shadow duration-300 flex flex-col">
-            <div class="flex items-start gap-2 mb-3">
-           
-            </div>
-            <h3 class="font-display text-xl font-semibold text-text-main mb-3">
-                Unequal Progress and Barriers for Women in Economics
-            </h3>
-            <p class="font-sans text-text-muted text-sm mb-3">
-                with <span class="text-text-main"><a href="https://www.oliverharman.me/" target="_blank"
-                        class="hover:text-forest transition-colors">Oliver Harman</a>, <a
-                        href="https://ninonmoreaukastler.com/" target="_blank"
-                        class="hover:text-forest transition-colors">Ninon
-                        Moreau-Kastler</a></span><br />
-                <span class="text-xs">May 2025</span><br />
-                <span class="text-xs font-semibold text-forest">Accepted for publication in Reviews of Economic Literature</span>
-            </p>
-            <details class="mb-4">
-                <summary class="font-sans text-sm font-medium text-forest cursor-pointer">Abstract</summary>
-                <p class="font-body text-text-main text-sm leading-relaxed mt-3">
-                    This paper reviews the literature on gender inequalities in the academic field of economics, highlighting both
-                    the unequal progress women have experienced and the persistent barriers they continue to face. Our analysis of
-                    recent literature and available data highlights that the reduction in women's absence in the field has been
-                    heterogeneous. While women now constitute 26% of published economists, their presence sharply declines at higher
-                    ranks, with only 5% representation among economists in the top percentile of research influence. Notably, recent
-                    progress has paradoxically concentrated at this highest level, indicating shifting institutional norms and
-                    evolving perceptions about women's contributions. We further explore how understanding women's behaviours and
-                    career choices, gender biases in evaluation, and workplace environments contribute to women's underrepresentation
-                    in the field. Our discussion extends to the labour market for economists, drawing parallels with broader labour
-                    trends, and examining how gender-biased treatment and hiring processes impact women's advancement. Finally, we
-                    turn to policy interventions, which are key in promoting gender balance, focusing on networks, mentorship, role
-                    models, and representation.
-                </p>
-            </details>
-            <div class="flex flex-wrap gap-4 items-center">
-                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4879332" target="_blank"
-                    class="inline-flex items-center gap-2 text-forest hover:text-gold font-sans font-medium text-sm transition-all duration-300 hover:gap-3 group/link">
-                    <span>SSRN WP</span>
-                    <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                </a>
-                <a href="https://www.theigc.org/publications/pipelines-or-pyramids-review-barriers-women-economics"
-                    target="_blank"
-                    class="inline-flex items-center gap-2 text-forest hover:text-gold font-sans font-medium text-sm transition-all duration-300 hover:gap-3 group/link">
-                    <span>IGC WP</span>
-                    <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                </a>
-                <a href="https://www.ft.com/content/e1d2a4d4-df3e-43ac-ba67-0aaf6b51dc45"
-                    target="_blank"
-                    class="inline-flex items-center gap-1.5 px-2 py-1 bg-warm-bg border border-border-warm rounded text-xs font-display font-medium text-text-muted hover:text-forest hover:border-forest transition-all duration-300">
-                    <span>Featured in Financial Times</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-   
-   
-
-                
                     <!-- Work in Progress Section Header -->
                     <div class="pt-4">
                         <h3 class="font-display text-2xl font-bold text-text-main mb-6 flex items-center gap-3">
@@ -578,25 +604,30 @@
                                         target="_blank" class="hover:text-forest transition-colors">Emmanuel
                                         Paroissien</a></span>
                             </p>
-                            <p class="font-body text-text-main text-sm leading-relaxed">
-                                Many studies have documented that high-income households tend to adopt diets of higher
-                                nutritional quality, ceteris paribus. Guided by the fact that the "liking for sweet
-                                taste is both innate and universal" (Drewnowski et al., 1997) and differences in supply
-                                conditions only explain a small share of diet inequalities (Allcott et al., 2019), we
-                                investigate a driver of food preferences that has not been explored yet: income enables
-                                households to substitute the pleasure derived from tasty (but unhealthy) foods with
-                                expensive leisure activities. We start by leveraging the latest wave of the French
-                                Consumer Expenditure Survey data to describe the income gradient in demand for leisure
-                                and healthy food. We document a positive correlation between income, diet quality, and
-                                out-of-home leisure. To evidence causality, we leverage food transaction data to
-                                estimate the effects of 2020 COVID-19-related lockdowns that can be seen as a large
-                                negative shock on out-of-home leisure, affecting disproportionately high-income
-                                households (who demand more leisure). Our results show that during the lockdown,
-                                higher-income households experienced a larger relative decline in diet quality,
-                                supporting the hypothesis that out-of-home leisure and unhealthy food consumption are
-                                substitutes. These findings highlight the role of income in shaping food choices and
-                                contribute to the literature on nutritional inequalities.
-                            </p>
+                            <details class="mb-2">
+                                <summary class="font-sans text-sm font-medium text-forest cursor-pointer inline-flex items-center gap-2">
+                                    Abstract
+                                </summary>
+                                <p class="font-body text-text-main text-sm leading-relaxed mt-3">
+                                    Many studies have documented that high-income households tend to adopt diets of higher
+                                    nutritional quality, ceteris paribus. Guided by the fact that the "liking for sweet
+                                    taste is both innate and universal" (Drewnowski et al., 1997) and differences in supply
+                                    conditions only explain a small share of diet inequalities (Allcott et al., 2019), we
+                                    investigate a driver of food preferences that has not been explored yet: income enables
+                                    households to substitute the pleasure derived from tasty (but unhealthy) foods with
+                                    expensive leisure activities. We start by leveraging the latest wave of the French
+                                    Consumer Expenditure Survey data to describe the income gradient in demand for leisure
+                                    and healthy food. We document a positive correlation between income, diet quality, and
+                                    out-of-home leisure. To evidence causality, we leverage food transaction data to
+                                    estimate the effects of 2020 COVID-19-related lockdowns that can be seen as a large
+                                    negative shock on out-of-home leisure, affecting disproportionately high-income
+                                    households (who demand more leisure). Our results show that during the lockdown,
+                                    higher-income households experienced a larger relative decline in diet quality,
+                                    supporting the hypothesis that out-of-home leisure and unhealthy food consumption are
+                                    substitutes. These findings highlight the role of income in shaping food choices and
+                                    contribute to the literature on nutritional inequalities.
+                                </p>
+                            </details>
                         </div>
 
                         <!-- Paper 4 (WIP) -->
@@ -608,11 +639,15 @@
                             <p class="font-sans text-text-muted text-sm mb-3">
                                 with <span class="text-text-main">Bénédicte Apouey, Simon Briole, Damien Mayaux</span>
                             </p>
-                            <p class="font-body text-text-main text-sm leading-relaxed mb-3">
-                                A preregistered randomized controlled trial examining the effects of social food
-                                security
-                                programs on students in higher education.
-                            </p>
+                            <details class="mb-3">
+                                <summary class="font-sans text-sm font-medium text-forest cursor-pointer inline-flex items-center gap-2">
+                                    Abstract
+                                </summary>
+                                <p class="font-body text-text-main text-sm leading-relaxed mt-3">
+                                    A preregistered randomized controlled trial examining the effects of social food
+                                    security programs on students in higher education.
+                                </p>
+                            </details>
                             <a href="https://doi.org/10.1257/rct.15529-1.3" target="_blank"
                                 class="inline-flex items-center font-sans font-medium text-forest hover:text-gold transition-colors text-sm">
                                 View Trial Registry
@@ -626,7 +661,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Teaching Experience Section -->
         <section id="teaching" class="py-24 bg-warm-bg-alt">
@@ -650,39 +684,30 @@
                         </div>
 
                         <div class="grid md:grid-cols-3 gap-4 ml-8">
-                            <div
-                                class="bg-white p-4 rounded-lg border-l-4 border-forest hover:shadow-md transition-shadow">
+                            <div class="bg-white p-4 rounded-lg border-l-4 border-forest hover:shadow-md transition-shadow">
                                 <div class="flex items-center justify-between mb-2">
                                     <span class="font-display font-bold text-forest text-sm">GY426</span>
-                                    <span
-                                        class="px-2 py-0.5 bg-forest/10 text-forest text-xs font-sans font-bold rounded">Lecturer</span>
+                                    <span class="px-2 py-0.5 bg-forest/10 text-forest text-xs font-sans font-bold rounded">Lecturer</span>
                                 </div>
-                                <p class="font-sans text-sm font-semibold text-text-main mb-1">Environmental and
-                                    Resource Economics</p>
+                                <p class="font-sans text-sm font-semibold text-text-main mb-1">Environmental and Resource Economics</p>
                                 <p class="font-body text-xs text-text-muted">Master's level</p>
                             </div>
 
-                            <div
-                                class="bg-white p-4 rounded-lg border-l-4 border-forest hover:shadow-md transition-shadow">
+                            <div class="bg-white p-4 rounded-lg border-l-4 border-forest hover:shadow-md transition-shadow">
                                 <div class="flex items-center justify-between mb-2">
                                     <span class="font-display font-bold text-forest text-sm">GY222</span>
-                                    <span
-                                        class="px-2 py-0.5 bg-forest/10 text-forest text-xs font-sans font-bold rounded">Lecturer</span>
+                                    <span class="px-2 py-0.5 bg-forest/10 text-forest text-xs font-sans font-bold rounded">Lecturer</span>
                                 </div>
-                                <p class="font-sans text-sm font-semibold text-text-main mb-1">Applied Environmental
-                                    Economics</p>
+                                <p class="font-sans text-sm font-semibold text-text-main mb-1">Applied Environmental Economics</p>
                                 <p class="font-body text-xs text-text-muted">Undergraduate level</p>
                             </div>
 
-                            <div
-                                class="bg-white p-4 rounded-lg border-l-4 border-gold hover:shadow-md transition-shadow">
+                            <div class="bg-white p-4 rounded-lg border-l-4 border-gold hover:shadow-md transition-shadow">
                                 <div class="flex items-center justify-between mb-2">
                                     <span class="font-display font-bold text-gold text-sm">GY473</span>
-                                    <span
-                                        class="px-2 py-0.5 bg-gold/20 text-yellow-800 text-xs font-sans font-bold rounded">Seminar</span>
+                                    <span class="px-2 py-0.5 bg-gold/20 text-yellow-800 text-xs font-sans font-bold rounded">Seminar</span>
                                 </div>
-                                <p class="font-sans text-sm font-semibold text-text-main mb-1">Economic Development and
-                                    the Environment</p>
+                                <p class="font-sans text-sm font-semibold text-text-main mb-1">Economic Development and the Environment</p>
                                 <p class="font-body text-xs text-text-muted">Master's level</p>
                             </div>
                         </div>
@@ -696,20 +721,16 @@
                                 <span class="font-sans text-sm font-bold text-text-muted">2024</span>
                             </div>
                             <div class="flex-grow">
-                                <div
-                                    class="bg-white p-4 rounded-lg border border-border-warm hover:shadow-md transition-shadow">
+                                <div class="bg-white p-4 rounded-lg border border-border-warm hover:shadow-md transition-shadow">
                                     <div class="flex items-center gap-2 mb-2">
-                                        <svg class="w-4 h-4 text-forest" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor">
+                                        <svg class="w-4 h-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                         </svg>
                                         <h4 class="font-sans font-bold text-text-main">University of Paris-Saclay</h4>
-                                        <span
-                                            class="px-2 py-0.5 bg-warm-bg text-text-muted text-xs font-sans font-bold rounded">Guest</span>
+                                        <span class="px-2 py-0.5 bg-warm-bg text-text-muted text-xs font-sans font-bold rounded">Guest</span>
                                     </div>
-                                    <p class="font-body text-sm text-text-main">Sustainable Food Systems (M.Sc. program)
-                                    </p>
+                                    <p class="font-body text-sm text-text-main">Sustainable Food Systems (M.Sc. program)</p>
                                 </div>
                             </div>
                         </div>
@@ -720,20 +741,16 @@
                                 <span class="font-sans text-sm font-bold text-text-muted">2020–23</span>
                             </div>
                             <div class="flex-grow">
-                                <div
-                                    class="bg-white p-4 rounded-lg border border-border-warm hover:shadow-md transition-shadow">
+                                <div class="bg-white p-4 rounded-lg border border-border-warm hover:shadow-md transition-shadow">
                                     <div class="flex items-center gap-2 mb-2">
-                                        <svg class="w-4 h-4 text-text-muted" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor">
+                                        <svg class="w-4 h-4 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                         </svg>
                                         <h4 class="font-sans font-bold text-text-main">Sciences Po</h4>
-                                        <span
-                                            class="px-2 py-0.5 bg-warm-bg text-text-muted text-xs font-sans font-bold rounded">TA</span>
+                                        <span class="px-2 py-0.5 bg-warm-bg text-text-muted text-xs font-sans font-bold rounded">TA</span>
                                     </div>
-                                    <p class="font-body text-sm text-text-main">Introduction to Environmental Economics
-                                        (Master's, Fall) • Led by Stephen Smith (UCL)</p>
+                                    <p class="font-body text-sm text-text-main">Introduction to Environmental Economics (Master's, Fall) • Led by Stephen Smith (UCL)</p>
                                 </div>
                             </div>
                         </div>
@@ -744,28 +761,23 @@
                                 <span class="font-sans text-sm font-bold text-text-muted">2020–21</span>
                             </div>
                             <div class="flex-grow">
-                                <div
-                                    class="bg-white p-4 rounded-lg border border-border-warm hover:shadow-md transition-shadow">
+                                <div class="bg-white p-4 rounded-lg border border-border-warm hover:shadow-md transition-shadow">
                                     <div class="flex items-center gap-2 mb-3">
-                                        <svg class="w-4 h-4 text-text-muted" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor">
+                                        <svg class="w-4 h-4 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                         </svg>
                                         <h4 class="font-sans font-bold text-text-main">ENS Paris-Saclay</h4>
-                                        <span
-                                            class="px-2 py-0.5 bg-warm-bg text-text-muted text-xs font-sans font-bold rounded">TA</span>
+                                        <span class="px-2 py-0.5 bg-warm-bg text-text-muted text-xs font-sans font-bold rounded">TA</span>
                                     </div>
                                     <div class="space-y-2 text-sm">
                                         <div class="flex items-start gap-2">
                                             <span class="text-gold mt-0.5">•</span>
-                                            <p class="font-body text-text-main">Dynamic Macroeconomics (3rd year
-                                                Bachelor, Fall) • Led by Hubert Kempf</p>
+                                            <p class="font-body text-text-main">Dynamic Macroeconomics (3rd year Bachelor, Fall) • Led by Hubert Kempf</p>
                                         </div>
                                         <div class="flex items-start gap-2">
                                             <span class="text-gold mt-0.5">•</span>
-                                            <p class="font-body text-text-main">Growth Models (3rd year Bachelor,
-                                                Spring) • Led by Hubert Kempf</p>
+                                            <p class="font-body text-text-main">Growth Models (3rd year Bachelor, Spring) • Led by Hubert Kempf</p>
                                         </div>
                                     </div>
                                 </div>
@@ -775,7 +787,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Education & Affiliations Section -->
         <section id="cv" class="py-24 bg-warm-bg">
@@ -869,7 +880,6 @@
 
         <!-- Contact Section -->
         <section id="contact" class="py-24 bg-forest text-white relative overflow-hidden">
-            <!-- Decorative Background -->
             <div class="absolute inset-0 opacity-10 pointer-events-none">
                 <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <path d="M0 100 C 40 50 60 50 100 0 V 100 H 0 Z" fill="#E8B86D" />
@@ -929,9 +939,7 @@
         <footer class="bg-warm-bg-alt py-8 border-t border-border-warm">
             <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="font-sans text-sm text-text-muted">© 2025 Ondine Berland</p>
-                <p class="font-sans text-sm text-text-muted flex items-center gap-1">
-                    
-                </p>
+                <p class="font-sans text-sm text-text-muted flex items-center gap-1"></p>
             </div>
         </footer>
     </main>
@@ -966,7 +974,7 @@
                 <object data="OndineBerland_CV_final.pdf?v=2" type="application/pdf" class="w-full h-full rounded-b-2xl min-h-[50vh]">
                     <div class="flex h-full items-center justify-center p-6 text-center">
                         <p class="font-sans text-text-main text-sm leading-relaxed">
-                            Your browser does not support embedded PDFs. 
+                            Your browser does not support embedded PDFs.
                             <a href="OndineBerland_CV_final.pdf?v=2" target="_blank" class="text-forest font-semibold underline">Open the CV directly in a new tab.</a>
                         </p>
                     </div>
